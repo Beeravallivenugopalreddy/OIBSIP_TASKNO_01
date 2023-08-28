@@ -132,8 +132,8 @@ function flushOperation(intBuffer) {
         runningTotal *= runningTotal;
     }
     else if (previousOperator === "^"){
-        c=1
-        while(intBuffer>0){
+        c=runningTotal
+        while(intBuffer+1>0){
         runningTotal = runningTotal * c;
         intBuffer=intBuffer-1 ;
         }
